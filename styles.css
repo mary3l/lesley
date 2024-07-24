@@ -1,0 +1,171 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background-color: rgb(189, 225, 122);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#noButton {
+  position: absolute;
+  margin-left: 150px;
+  transition: 0.5s;
+}
+
+#yesButton {
+  position: absolute;
+  margin-right: 150px;
+}
+
+.header_text {
+  font-family: "Nunito", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.btn {
+  background-color: #fff;
+  color: rgb(233, 48, 48);
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 50px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.gif_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* iPhone SE, iPhone 5 */
+@media only screen and (max-width: 320px) {
+  body {
+    height: 100vh;
+  }
+
+  .header_text {
+    font-size: 20px;
+  }
+
+  img {
+    height: 60vh;
+  }
+
+  .btn {
+    padding: 10px 18px;
+    font-size: 12px;
+  }
+
+  #noButton {
+    margin-left: 50px;
+  }
+
+  #yesButton {
+    margin-right: 50px;
+  }
+}
+
+/* iPhone 6/7/8 Plus */
+@media only screen and (max-width: 414px) {
+  body {
+    height: 100vh;
+  }
+
+  .header_text {
+    font-size: 28px;
+  }
+
+  img {
+    height: 60vh;
+  }
+
+  .btn {
+    padding: 15px 25px;
+    font-size: 14px;
+  }
+
+  #noButton {
+    margin-left: 100px;
+  }
+
+  #yesButton {
+    margin-right: 100px;
+  }
+}
+
+/* iPhone X and later (including iPhone 15) */
+@media only screen and (max-width: 375px) {
+  body {
+    height: 100vh;
+  }
+
+  .header_text {
+    font-size: 24px;
+  }
+
+  img {
+    height: 60vh;
+  }
+
+  .btn {
+    padding: 12px 22px;
+    font-size: 13px;
+  }
+
+  #noButton {
+    margin-left: 75px;
+  }
+
+  #yesButton {
+    margin-right: 75px;
+  }
+}
+
+/* General styling for tablets and small desktops */
+@media only screen and (max-width: 768px) {
+  body {
+    height: 100vh;
+  }
+
+  .header_text {
+    font-size: 32px;
+  }
+
+  img {
+    height: 65vh;
+  }
+
+  .btn {
+    padding: 14px 28px;
+    font-size: 15px;
+  }
+
+  #noButton {
+    margin-left: 120px;
+  }
+
+  #yesButton {
+    margin-right: 120px;
+  }
+}
